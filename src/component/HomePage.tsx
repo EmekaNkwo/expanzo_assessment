@@ -4,10 +4,9 @@ import Image from 'next/image'
 import React from 'react'
 
 const tabs = [
-    { label: 'All', content: <div>Content for Tab 1</div> },
-    { label: 'Companies', content: <div>Content for Tab 2</div> },
-    { label: 'Phones', content: <div>Content for Tab 2</div> },
-    // Add more tabs as needed
+    { label: 'All', content: <div>Content for All Tab</div> },
+    { label: 'Companies', content: <div>Content for Companies Tab</div> },
+    { label: 'Phones', content: <div>Content for Phones Tab</div> },
 ];
 const HomePage = () => {
     return (
