@@ -16,7 +16,7 @@ interface TabContentProps {
 const Tab: React.FC<TabProps> = ({ label, active, onClick }) => (
     <div
         onClick={onClick}
-        className={`cursor-pointer py-[10px] px-[20px]  ${active ? 'border-b-[#00c39e] border-b-[3px] text-[#00c39e]' : 'none'}`}
+        className={`cursor-pointer py-[10px] px-[20px] font-semibold ${active ? 'border-b-[#00c39e] border-b-[3px] text-[#00c39e]' : 'none'}`}
     >
         {label}
     </div>
