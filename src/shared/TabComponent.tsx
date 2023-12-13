@@ -16,6 +16,7 @@ interface TabContentProps {
 const Tab: React.FC<TabProps> = ({ label, active, onClick }) => (
     <div
         onClick={onClick}
+        data-cy={`tab-${label.toLowerCase().replace(' ', '-')}`}
         className={`cursor-pointer py-[10px] px-[20px] font-semibold ${active ? 'border-b-[#00c39e] border-b-[3px] text-[#00c39e]' : 'none'}`}
     >
         {label}
@@ -23,7 +24,7 @@ const Tab: React.FC<TabProps> = ({ label, active, onClick }) => (
 );
 
 const TabContent: React.FC<TabContentProps> = ({ activeTab, tabNumber, children }) => (
-    <div className={`${activeTab === tabNumber ? 'block' : 'hidden'}`}>{children}</div>
+    <div data-cy={`tab-content-${tabNumber}`} className={`${activeTab === tabNumber ? 'block' : 'hidden'}`}>{children}</div>
 );
 
 interface TabComponentProps {
