@@ -6,7 +6,7 @@ const page = () => {
     return (
         <div className='flex flex-col items-center justify-center gap-[2rem] p-[5rem]'>
             <h3 className='font-medium text-[20px]'>Contact</h3>
-            <div className="flex items-start justify-around gap-[10rem] mt-[1rem]">
+            <div className="flex items-start justify-around md:gap-[10rem] gap-[5rem] mt-[1rem]">
                 <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-2">
                         <FontAwesomeIcon icon={faLocationDot} className="text-[#00c39e]" />

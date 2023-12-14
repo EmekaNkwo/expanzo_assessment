@@ -40,7 +40,7 @@ const TabComponent: React.FC<TabComponentProps> = ({ tabs }) => {
 
     return (
         <div>
-            <div className='flex gap-[4rem]'>
+            <div className='flex md:gap-[4rem] gap-[2rem]'>
                 {tabs.map((tab, index) => (
                     <Tab
                         key={index}
